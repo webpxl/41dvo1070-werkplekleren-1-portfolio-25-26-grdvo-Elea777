@@ -1,34 +1,44 @@
-Project: Portfolio — Elea Yildiz
+Portfolio — Elea Yildiz
 
-Wat is er gedaan
-- Index.html is gerefactord naar semantische en toegankelijke HTML (header, main, sections, footer).
-- Bootstrap CSS toegevoegd (CDN) en eigen `style.css` maakt site comic/strip-stijl.
-- Drie comic-stijl SVG-afbeeldingen toegevoegd in `fotos/` (project1.svg, project2.svg, project3.svg).
-- Hero-foto gebruikt uit `fotos/20250414_132901174_iOS.jpg`.
-- `script.js` toegevoegd met een eenvoudige, toegankelijke mobile-menu toggle en ruimte voor uitbreidingen.
+Welkom op mijn persoonlijke portfolio! 🎨💻
+Ik ben Elea Yildiz, student Grafische Vormgeving & Digitale Vormgeving (DVO). Dit is mijn eerste portfolio waarin ik laat zien wat ik tot nu toe geleerd en gemaakt heb. Het is simpel, overzichtelijk en helemaal van mij.
 
-Hoe lokaal te testen
-1. Open `index.html` direct in je browser door te dubbelklikken (werkt voor statische sites).
-2. Of start een eenvoudige server vanuit de projectmap (aanbevolen):
+Over deze site
 
-   ```powershell
-   # vanuit de projectmap
-   python -m http.server 8000
-   # Open daarna http://localhost:8000
-   ```
+De site is opgebouwd met HTML, CSS en JavaScript, volledig responsive voor mobiel, tablet en desktop.
 
-Wat je makkelijk kunt aanpassen
-- Vervang project-URL's (nu naar example.com) met je eigen links in `index.html`.
-- Vervang de hero-foto door een andere in de `fotos/` map (gebruik jpg of webp voor brede browser-ondersteuning).
-- Als je .heic hebt: converteer naar .jpg of .webp (gebruik foto-editor of online converter).
+Bootstrap CSS is gebruikt voor een vlotte opmaak, gecombineerd met mijn eigen style.css voor een unieke comic/strip-look.
 
-Tips voor verder verbeteren (optioneel)
-- Voeg echte screenshots of demo-URL's toe voor elke projectkaart.
-- Voeg lichte animaties toe in `script.js` (er staat een `initAnimations()` placeholder).
+Er zijn drie projecten opgenomen, elk met een eigen comic-stijl SVG-afbeelding.
 
-Als je wil dat ik één van de volgende direct uitvoer, zeg het hier:
-- Project-links automatisch instellen naar jouw echte URL's.
-- .heic naar .jpg/webp conversie (als je het .heic-bestand toevoegt).
-- Extra styling of eenvoudige animatie toevoegen (fade-in voor projecten).
+De hero-foto bovenaan geeft een persoonlijk tintje aan de site.
 
-Veel succes! Als je iets simpels wilt veranderen, doe ik het meteen voor je.
+Projecten
+
+In deze portfolio vind je drie van mijn school- en persoonlijke projecten.
+
+Elk project heeft een korte uitleg over wat het is en wat ik precies heb gedaan.
+
+De afbeeldingen zijn bedoeld om de projecten visueel aantrekkelijk te maken.
+
+Links naar demo’s of live versies kun je hier makkelijk zelf toevoegen.
+
+Technisch
+
+index.html: semantische en toegankelijke HTML met header, main, sections en footer.
+
+style.css: eigen styling in comic-stijl, bovenop Bootstrap.
+
+script.js: eenvoudige mobile-menu toggle, ruimte voor toekomstige uitbreidingen en animaties.
+
+Afbeeldingen: fotos/ bevat alle visuals, inclusief hero-foto en project-SVG’s.
+
+Lokaal testen
+
+Je kunt de site eenvoudig lokaal bekijken:
+
+Open index.html direct in je browser (werkt voor statische sites).
+
+Of start een kleine server vanuit de projectmap (aanbevolen):
+Python 3:
+  python -m http.server
