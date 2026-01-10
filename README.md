@@ -1,34 +1,34 @@
-# Portfolio – Elea Yildiz
+Project: Portfolio — Elea Yildiz
 
-Dit is mijn portfolio als onderdeel van WPL1 Digitale Vormgeving (PXL).
+Wat is er gedaan
+- Index.html is gerefactord naar semantische en toegankelijke HTML (header, main, sections, footer).
+- Bootstrap CSS toegevoegd (CDN) en eigen `style.css` maakt site comic/strip-stijl.
+- Drie comic-stijl SVG-afbeeldingen toegevoegd in `fotos/` (project1.svg, project2.svg, project3.svg).
+- Hero-foto gebruikt uit `fotos/20250414_132901174_iOS.jpg`.
+- `script.js` toegevoegd met een eenvoudige, toegankelijke mobile-menu toggle en ruimte voor uitbreidingen.
 
-## Inhoud
+Hoe lokaal te testen
+1. Open `index.html` direct in je browser door te dubbelklikken (werkt voor statische sites).
+2. Of start een eenvoudige server vanuit de projectmap (aanbevolen):
 
-- Korte voorstelling
-- Waarom Digitale Vormgeving
-- Mijn werkproces
-- Contactinformatie
-- Speciale sectie
+   ```powershell
+   # vanuit de projectmap
+   python -m http.server 8000
+   # Open daarna http://localhost:8000
+   ```
 
-## Technische info
+Wat je makkelijk kunt aanpassen
+- Vervang project-URL's (nu naar example.com) met je eigen links in `index.html`.
+- Vervang de hero-foto door een andere in de `fotos/` map (gebruik jpg of webp voor brede browser-ondersteuning).
+- Als je .heic hebt: converteer naar .jpg of .webp (gebruik foto-editor of online converter).
 
-- HTML, CSS en JavaScript
-- Responsive design voor desktop, tablet en smartphone
-- Geen CMS gebruikt (zoals WordPress)
+Tips voor verder verbeteren (optioneel)
+- Voeg echte screenshots of demo-URL's toe voor elke projectkaart.
+- Voeg lichte animaties toe in `script.js` (er staat een `initAnimations()` placeholder).
 
-## Gebruikte tools
+Als je wil dat ik één van de volgende direct uitvoer, zeg het hier:
+- Project-links automatisch instellen naar jouw echte URL's.
+- .heic naar .jpg/webp conversie (als je het .heic-bestand toevoegt).
+- Extra styling of eenvoudige animatie toevoegen (fade-in voor projecten).
 
-- WebStorm
-- Git en GitHub
-- GitHub Copilot (AI-assistent)
-- ChatGPT (voor advies en structuur)
-
-## GitHub Pages
-
-Deze website is online te bekijken via GitHub Pages op:  
-`https://gebruikersnaam.github.io/repo-naam/`
-
-## Bronnen
-
-- Eigen foto’s (rechtenvrij of eigendom)
-- Iconen en kleuren geïnspireerd door Bootstrap
+Veel succes! Als je iets simpels wilt veranderen, doe ik het meteen voor je.

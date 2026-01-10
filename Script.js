@@ -1,5 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('Portfolio is correct geladen');
+// Old script placeholder. The main interactive code is in `script.js` (lowercase).
+// This file is kept for compatibility but is intentionally empty.
 
-    // Hier kan later extra interactie toegevoegd worden
-});
+console.log('Old Script.js placeholder — use script.js instead.');

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g3" x1="0" x2="1">
+      <stop offset="0" stop-color="#c6ffdd"/>
+      <stop offset="1" stop-color="#fbd786"/>
+    </linearGradient>
+    <pattern id="dots3" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="2" fill="#0002" />
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g3)" />
+  <rect x="40" y="40" width="1120" height="720" fill="url(#dots3)" opacity="0.26"/>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="600" y="280" font-size="64" font-weight="700" fill="#222">Project 3</text>
+    <text x="600" y="360" font-size="28" fill="#222">JavaScript  interacties</text>
+  </g>
+  <g transform="translate(900,620)">
+    <rect x="-140" y="-70" width="280" height="120" rx="14" fill="#fff" stroke="#222" stroke-width="6" />
+    <text x="0" y="-18" font-size="20" font-weight="700" fill="#222" text-anchor="middle">Bekijk</text>
+  </g>
+</svg>
+

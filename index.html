@@ -3,81 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio – Elea Yildiz</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Eigen stylesheet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Bootstrap CSS (local subset for offline/testing) -->
+    <link href="vendor/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header">
-    <h1>Elea Yildiz</h1>
-    <p>Digitale vormgever</p>
+<header class="site-header container" role="banner">
+    <div class="site-header__inner d-flex justify-content-between align-items-center py-3">
+        <h1 class="site-header__title">Elea Yildiz</h1>
+
+        <!-- Mobile menu toggle -->
+        <button class="site-header__menu-btn btn btn-outline-primary d-md-none" aria-expanded="false"
+                aria-controls="main-nav" aria-label="Toon navigatie">
+            Menu
+        </button>
+
+        <nav id="main-nav" class="site-nav d-none d-md-block" role="navigation" aria-label="Hoofdmenu">
+            <ul class="site-nav__list list-unstyled d-flex gap-3 mb-0">
+                <li class="site-nav__item"><a class="site-nav__link" href="#about">Over mij</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="#projects">Projecten</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-<main id="main-content">
+<main class="site-main" id="top">
 
-    <!-- Korte voorstelling -->
-    <section class="intro">
-        <article class="intro-text">
-            <h2>Wie ben ik?</h2>
-            <p>
-                Ik ben Elea Yildiz en ik studeer Digitale Vormgeving aan PXL.
-                Ik ben creatief, leergierig en werk graag samen aan digitale projecten.
-            </p>
-            <p>
-                Ik combineer creativiteit met technologie en hecht veel belang
-                aan gebruiksvriendelijkheid en visuele kwaliteit.
-            </p>
-        </article>
+    <!-- Hero / Intro -->
+    <section class="hero container py-4" aria-labelledby="hero-title">
+        <div class="hero__inner d-flex flex-column flex-md-row align-items-center gap-4">
+            <figure class="hero__figure m-0">
+                <picture>
+                    <!-- Fallback to existing JPG (HEIC removed because file not present) -->
+                    <img src="assets/20250414_132901174_iOS.jpg" alt="Portretfoto Elea Yildiz"
+                         class="hero__image img-fluid rounded">
+                </picture>
+                <figcaption class="visually-hidden">Portret van Elea Yildiz</figcaption>
+            </figure>
 
-        <article class="intro-photo">
-            <img src="fotos/20250414_132901174_iOS.jpg" alt="Portretfoto van Elea Yildiz">
-            <div class="badge">Hey! Ik ben Elea</div>
-        </article>
-
-        <article class="intro-contact">
-            <h2>Contact</h2>
-            <p>📸 Instagram: @elea-yildiz</p>
-            <p>📞 0486 56 47 85</p>
-            <p>✉️ <a href="mailto:elea.ny@hotmail.com">elea.ny@hotmail.com</a></p>
-        </article>
+            <div class="hero__content">
+                <h2 id="hero-title">Wie ben ik?</h2>
+                <p>Momenteel studeer ik Digitale Vormgeving aan PXL. Ik ben sociaal, leergierig en hou van
+                    samenwerken.</p>
+                <p>Ik combineer graag creativiteit met technologie. Voor mij is het belangrijk om mooie én functionele
+                    dingen te maken.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Waarom Digitale Vormgeving -->
-    <section class="why-dvo">
-        <h2>Waarom Digitale Vormgeving?</h2>
-        <p>
-            Ik koos voor de opleiding Digitale Vormgeving omdat ik mijn
-            creatieve ideeën wil omzetten naar functionele digitale toepassingen.
-            Voor mij is een goed ontwerp niet alleen mooi, maar ook logisch en bruikbaar.
-        </p>
+    <!-- About / Waarom DVO -->
+    <section id="about" class="about container my-4" aria-labelledby="about-title">
+        <h2 id="about-title">Waarom Digitale Vormgeving?</h2>
+        <p>Ik koos voor Digitale Vormgeving omdat ik creativiteit wil combineren met technologie. Ik haal voldoening uit
+            het ontwerpen én realiseren van digitale projecten.</p>
     </section>
 
-    <!-- Speciale sectie -->
-    <section class="special">
-        <h2>Mijn werkproces</h2>
-        <p>
-            Mijn werkproces start met <strong>onderzoek en inspiratie</strong>.
-            Daarna werk ik mijn ideeën uit in <strong>schetsen en wireframes</strong>.
-        </p>
-        <p>
-            Vervolgens ontwerp ik een <strong>visuele stijl</strong> en zorg ik
-            ervoor dat het ontwerp technisch correct wordt uitgewerkt
-            met HTML, CSS en JavaScript.
-        </p>
+    <!-- Process / Werkproces -->
+    <section class="process container my-4" aria-labelledby="process-title">
+        <h2 id="process-title">Mijn werkproces</h2>
+        <p>Onderzoek → Schetsen → Visueel ontwerp → Technisch werkend maken met HTML, CSS en JavaScript.</p>
+    </section>
+
+    <!-- Projects / Projecten -->
+    <section id="projects" class="projects container my-4" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projecten</h2>
+        <div class="projects__list row g-3">
+
+            <article class="projects__item col-12 col-md-4">
+                <div class="card h-100 project-card">
+                    <img src="fotos/project1.svg" class="card-img-top" alt="Project 1 comic afbeelding">
+                    <div class="card-body">
+                        <h3 class="card-title h5">Project 1</h3>
+                        <p class="card-text">Webdesign: HTML & CSS structuur en styling.</p>
+                        <a href="https://example.com/project1" class="btn btn-primary" target="_blank" rel="noopener">Bekijk
+                            project</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="projects__item col-12 col-md-4">
+                <div class="card h-100 project-card">
+                    <img src="fotos/project2.svg" class="card-img-top" alt="Project 2 comic afbeelding">
+                    <div class="card-body">
+                        <h3 class="card-title h5">Project 2</h3>
+                        <p class="card-text">Wireframes en concept ontwerp.</p>
+                        <a href="https://example.com/project2" class="btn btn-primary" target="_blank" rel="noopener">Bekijk
+                            project</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="projects__item col-12 col-md-4">
+                <div class="card h-100 project-card">
+                    <img src="fotos/project3.svg" class="card-img-top" alt="Project 3 comic afbeelding">
+                    <div class="card-body">
+                        <h3 class="card-title h5">Project 3</h3>
+                        <p class="card-text">JavaScript functies voor interactie.</p>
+                        <a href="https://example.com/project3" class="btn btn-primary" target="_blank" rel="noopener">Bekijk
+                            project</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact container my-4" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <p>📸 @elea-yildiz</p>
+        <p>📞 0486 56 47 85</p>
+        <p>✉️ <a href="mailto:elea.ny@hotmail.com">elea.ny@hotmail.com</a></p>
+
+        <!-- Motivatie / Persoonlijk statement -->
+        <div class="motivation mt-3 p-3 bg-light rounded">
+            <h3>Motivatie</h3>
+            <p>Ik ben een leergierige en flexibele professional die graag nieuwe uitdagingen aangaat. Ik gedij goed in
+                een teamomgeving en leer het liefst door actief te doen. Wanneer ik tegen een probleem aanloop, geef ik
+                niet op: ik probeer verschillende oplossingen en durf om hulp te vragen om samen het beste resultaat te
+                bereiken. Ik zie elke uitdaging als een kans om mijn vaardigheden te ontwikkelen en bij te dragen aan
+                het succes van het team.</p>
+        </div>
     </section>
 
 </main>
 
-<footer>
-    <p>© 2026 – Elea Yildiz</p>
-    <a href="privacy.txt">Privacy-richtlijnen</a>
+<footer class="site-footer bg-dark text-white py-3 mt-4">
+    <div class="container text-center">
+        <p class="mb-0">© 2026 — Elea Yildiz</p>
+    </div>
 </footer>
 
-<script src="script.js" defer></script>
+<!-- Site script (deferred) -->
+<script src="./script.js" defer></script>
 </body>
 </html>
